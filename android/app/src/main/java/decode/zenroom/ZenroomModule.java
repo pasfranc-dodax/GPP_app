@@ -62,7 +62,7 @@ public class ZenroomModule extends ReactContextBaseJavaModule {
             System.out.println("Conf: ");
             System.out.println("Key: " + key);
             System.out.println("Data: " + data);
-            String output = (new Zenroom()).execute(contract, "", key, data);
+            String output = (new Zenroom()).execute(contract, "debug=3", key, data);
             System.out.println("Zenroom returns: " + output);
             promise.resolve(output);
         } catch (Exception e) {
